@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255); /*esto edita el color de la pagina;!>*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hace que el diseño ocupe toda la altura de la ventana del navegador 
+    
+     <!--image: url(/fondo_3.jpg);--!> */
+
+     
+}
+    
+.image-container {
+    display: inline-block; /* Hace que el contenedor se comporte como un elemento en línea */
+    margin-right: 20px; /* Espacio entre cada imagen */
+    text-align: center;
+}
+
+
+  h1{   /* aca estoy editando lo que seria la funcionalidad de h1*/
+    text-decoration: underline; /* Subrayado */
+    color: black; /* color del titulo oscuro */
+    background-color: rgb(0,97,169); /* Color de fondo */
+    padding: 10px; /* Espacio alrededor del texto */}
+
+  h2{  text-decoration: underline; /* Subrayado */
+    color: black; /* Color del texto oscuro */
+    background-color: rgb(0,97,169); /* Color de fondo */
+    padding: 0px; /* Espacio alrededor del texto */ }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      color: black;
+      padding: 2px 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+
+    .fixed-image {
+        position: fixed;     
+        right: 20px;
+        bottom: 20px;
+        width: 70px; /* Ajusta el tamaño según tus necesidades */
+        height: auto;
+        z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+     
+    
+    }
+
+    .portada-icon {
+      margin-right: 20px; /* Espacio entre cada imagen */
+      text-align: center;
+      width: 100%; /* Ajusta el tamaño según tus necesidades */
+        height: auto;
+    
+    }
+
+
+
+ main {
+        margin-top: 60px; /* Ajusta según la altura del header */
+        padding: 10px;
+}
+
+ .content {
+    height: 2000px; /* Para demostrar el desplazamiento */
+    background-color: #f4f4f4;
+}
+
+.container {
+  min-width: 70px;
+  max-width: 100%;
+  width: auto;
+  height: 340px;
+  display: flex;
+  gap: 10px;
+  margin-inline-start: 30px;
+} 
+
+.card {
+  min-width: 70px;
+  max-width: 340px;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 340px;
+  position: relative;
+  transition: 0.5s ease;
+  overflow:hidden  /*Para evitar que el contenido se desborde cuando se expande */
+}
+
+.card:hover {
+  flex-grow: 7;
+}
+
+.card img {
+  align-self: center;
+  min-width: 70px;
+  max-width: 340px;
+  height: 340px;
+  transition: 0.5s ease;
+}
+
+.card:hover img {
+  min-width: none;
+  width: 400px; /* Cambia el tamaño de la imagen al expandir la tarjeta */
+  height: 340px;
+  transition: 0.5 ease;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: 0.5s ease;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  opacity: 1;}
+
+  
